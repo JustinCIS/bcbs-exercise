@@ -1,1 +1,13 @@
-<p>user-form works!</p>
+<form [formGroup]="userForm">
+<label for="user">
+    Username
+</label>
+<input name="user" type="text">
+
+<label for="password">
+    Password
+</label>
+<input name="password" type="password">
+<button type="button" (click)="login()">Login</button>
+
+</form>
